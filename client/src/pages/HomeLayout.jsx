@@ -1,3 +1,9 @@
-export default function HomeLayout() {
-  return <div>HomeLayout</div>;
-}
+import { Outlet } from 'react-router-dom';
+const HomeLayout = () => {
+  return (
+    <>
+      <Outlet />
+    </>
+  );
+};
+export default HomeLayout;
